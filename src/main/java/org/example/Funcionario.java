@@ -34,7 +34,7 @@ public class Funcionario implements Cloneable {
     }
     @Override
     public String toString() {
-        return "Cliente{" +
+        return "Funcionario{" +
                 "matricula=" + matricula +
                 ", nome='" + nome + '\'' +
                 ", declaracao=" + declaracao +

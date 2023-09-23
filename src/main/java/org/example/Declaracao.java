@@ -17,7 +17,7 @@ public class Declaracao implements Cloneable {
     public Integer getMatricula() {
         return matricula;
     }
-    public void setMatricula(Integer matricula) {
+    public void setNumero(Integer matricula) {
         this.matricula = matricula;
     }
     @Override
@@ -26,7 +26,7 @@ public class Declaracao implements Cloneable {
     }
     @Override
     public String toString() {
-        return "Declaracao{" +
+        return "declaracao{" +
                 "cidade='" + cidade + '\'' +
                 ", matricula=" + matricula +
                 '}';

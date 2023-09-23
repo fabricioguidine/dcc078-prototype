@@ -2,11 +2,11 @@ package org.example;
 public class Funcionario implements Cloneable {
     private int matricula;
     private String nome;
-    private Declaração declaração;
-    public Funcionario(int matricula, String nome, Declaração declaração) {
+    private Declaracao declaracao;
+    public Funcionario(int matricula, String nome, Declaracao declaracao) {
         this.matricula = matricula;
         this.nome = nome;
-        this.declaração = declaração;
+        this.declaracao = declaracao;
     }
     public int getMatricula() {
         return matricula;
@@ -20,24 +20,24 @@ public class Funcionario implements Cloneable {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public Declaração getDeclaração() {
-        return declaração;
+    public Declaracao getDeclaracao() {
+        return declaracao;
     }
-    public void setDeclaração(Declaração declaração){
-        this.declaração = declaração;
+    public void setDeclaração(Declaracao declaracao){
+        this.declaracao = this.declaracao;
     }
     @Override
     public Funcionario clone() throws CloneNotSupportedException {
         Funcionario funcionarioClone = (Funcionario) super.clone();
-        funcionarioClone.declaração = (Declaração) funcionarioClone.declaração.clone();
-        return funcionarioClone
+        funcionarioClone.declaracao = (Declaracao) funcionarioClone.declaracao.clone();
+        return funcionarioClone;
     }
     @Override
     public String toString() {
         return "Cliente{" +
                 "matricula=" + matricula +
                 ", nome='" + nome + '\'' +
-                ", declaracao=" + declaração +
+                ", declaracao=" + declaracao +
                 '}';
     }
 }
